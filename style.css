@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background : 
+    linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)
+    ) fixed no-repeat center,
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg) fixed no-repeat center;
+  background-size: cover;
+  font-family: 'poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  color: white;
+  margin: 30px auto;
+}
+
+h1 {
+  font-weight: 800;
+  font-size : 1.8em;
+  margin : 10px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+#description {
+  font-weight: 200;
+  font-size : 1em;
+  font-style: italic;
+  margin: 0;
+}
+
+/* FORM */
+
+main {
+  background-color: rgba(27, 27, 50, 0.8);
+  padding: 35px;
+  max-width: 800px;
+  margin: auto;
+  color: white;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+
+.personnal-info {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#little {
+  font-size: 0.7em;
+}
+
+.personnal-info input, .dropmenu, #message {
+  padding: 8px;
+  width: 100%;
+  font-size: 0.9em;
+  border: 2px solid rgb(58, 58, 158);
+  border-radius: 5px;
+  margin-bottom: 25px;
+  vertical-align: baseline;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.dropmenu {
+  width: 100%;
+}
+
+#submit {
+  background-color: #37AF65;
+  display: block;
+  margin: 0;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-family: 'poppins', sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.danger {
+  background-color: #C70039;
+  border-radius: 1rem;
+}
+
+a {
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+/*##############################################*/
+/*                   CARD                       */
+/*##############################################*/
+
+.card {
+  margin: auto;
+  width: 550px;
+  aspect-ratio: 16 / 9;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+}
+
+.card_head {
+  height: 20%;
+  font-family: Kinnari;
+  background-color: #0dcaf0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+}
+
+.card_head h1, .card_info_02 h2 {
+  margin: auto;
+  margin-top: -0.7rem;
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.card_info_01 {
+  display: flex;
+  justify-content: space-evenly;
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1;
+}
+
+.main_content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 230px;
+}
+
+.picture {
+  height: 100%;
+  display: flex;
+}
+
+.picture img {
+  height: 200px;
+  aspect-ratio: 10/15;
+  margin: auto;
+  border: 1px solid black;
+  
+}
+
+.card_info_02 {
+  padding-top: 1rem;;
+  //background-color: #C70039;
+}
+
+.card_info_02 h2 {
+  background-color: #0dcaf0;
+  font-family: Kinnari;
+  font-size: 2rem;
+  margin: auto;
+  line-height: 1.2;
+  padding: 0 1rem;
+  width: fit-content;
+  border: 1px solid black;
+}
+
+.card_info_02 .address {
+  margin: 1rem 0.5rem;
+  color: #000;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
