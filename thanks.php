@@ -47,8 +47,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['error'] = $phpFileUploadErrors[$_FILES['driverPicture']['error']];
     }
     
-
-
     if (empty($errors)) {
         
         // ON récupère l'extension
@@ -64,6 +62,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         // on déplace le fichier temporaire vers le nouvel emplacement sur le serveur. Ça y est, le fichier est uploadé
         move_uploaded_file($_FILES['driverPicture']['tmp_name'], $uploadFile);
     }
+
+
 
 }
 
@@ -97,6 +97,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
         
         ?>
+        <form action="form.php" method="POST">
+            <input type="hidden" name="imagePath" value="<?= $uploadFile ?>">
+            <button type="submit" value="submit" id="submit">
+                Supprimer et revenir en arrière
+            </button>
+        </form>
 
 
 

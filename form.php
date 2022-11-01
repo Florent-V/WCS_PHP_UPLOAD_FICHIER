@@ -1,3 +1,18 @@
+<?php 
+
+$errors = [];
+
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $infosImg = array_map('trim', $_POST);
+    $infosImg = array_map('htmlspecialchars', $infosImg);
+    
+    if (file_exists($infosImg['imagePath'])) {
+        unlink($infosImg['imagePath']);
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
